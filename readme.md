@@ -15,15 +15,16 @@ The following **required** functionality is completed:
 - [x] User can view the last 20 posts. (4pts)
 
 The following **additional** functionality/feature is completed:
+
+- [x] The Splash screen and the login screen are customized to look like instagram.
 - [x] User can logout and the app remembers them for the next visit.
 - [x] The app is customized to have tab bar.
+- [x] Users can see their posts right after they post it.
 - [x] User can see a toast to know whether the post is created or not.
-- [x] The Splash screen and the login screen are customized to look like instagram.
-
 
 The following **bonus** features are implemented:
 
-- [ ] User can pull to refresh. (1pt)
+- [x] User can pull to refresh. (1pt)
 - [ ] User can load past posts infinitely. (2pts)
 
 ## Video Walkthrough

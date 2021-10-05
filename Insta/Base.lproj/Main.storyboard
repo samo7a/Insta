@@ -235,13 +235,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqN-wu-YcM">
-                                                    <rect key="frame" x="10" y="10" width="394" height="376.5"/>
+                                                    <rect key="frame" x="10" y="10" width="394" height="376"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="yqN-wu-YcM" secondAttribute="height" multiplier="197:188" id="PGi-ax-Ki0"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KI5-1A-5s4">
-                                                    <rect key="frame" x="10" y="396.5" width="38" height="20.5"/>
+                                                    <rect key="frame" x="10" y="396" width="38" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="38" id="PCS-76-sdm"/>
                                                     </constraints>
@@ -250,7 +250,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU0-Xq-ono">
-                                                    <rect key="frame" x="58" y="396.5" width="346" height="20.5"/>
+                                                    <rect key="frame" x="58" y="396" width="346" height="42.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -259,13 +259,12 @@
                                             <constraints>
                                                 <constraint firstItem="rU0-Xq-ono" firstAttribute="top" secondItem="yqN-wu-YcM" secondAttribute="bottom" constant="10" id="2AO-hq-r8L"/>
                                                 <constraint firstItem="yqN-wu-YcM" firstAttribute="leading" secondItem="Q1o-Kq-Fur" secondAttribute="leading" constant="10" id="COk-Bn-uix"/>
-                                                <constraint firstItem="KI5-1A-5s4" firstAttribute="centerY" secondItem="rU0-Xq-ono" secondAttribute="centerY" id="Cgj-0b-cd7"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="rU0-Xq-ono" secondAttribute="bottom" constant="10" id="DiC-b3-BnV"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="rU0-Xq-ono" secondAttribute="bottom" constant="-12" id="DiC-b3-BnV"/>
                                                 <constraint firstAttribute="trailing" secondItem="rU0-Xq-ono" secondAttribute="trailing" constant="10" id="QHd-tL-GhV"/>
                                                 <constraint firstItem="KI5-1A-5s4" firstAttribute="leading" secondItem="Q1o-Kq-Fur" secondAttribute="leading" constant="10" id="Qf7-f0-IuO"/>
                                                 <constraint firstItem="KI5-1A-5s4" firstAttribute="top" secondItem="yqN-wu-YcM" secondAttribute="bottom" constant="10" id="dII-Jx-R4R"/>
                                                 <constraint firstAttribute="trailing" secondItem="yqN-wu-YcM" secondAttribute="trailing" constant="10" id="dYj-Et-nfM"/>
-                                                <constraint firstItem="rU0-Xq-ono" firstAttribute="baseline" secondItem="KI5-1A-5s4" secondAttribute="firstBaseline" id="gUa-ip-Y1a"/>
+                                                <constraint firstItem="rU0-Xq-ono" firstAttribute="baseline" secondItem="KI5-1A-5s4" secondAttribute="firstBaseline" constant="22" id="gUa-ip-Y1a"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="KI5-1A-5s4" secondAttribute="bottom" constant="10" id="nx1-CE-kK3"/>
                                                 <constraint firstItem="rU0-Xq-ono" firstAttribute="leading" secondItem="KI5-1A-5s4" secondAttribute="trailing" constant="10" id="oYl-DI-yzV"/>
                                                 <constraint firstItem="yqN-wu-YcM" firstAttribute="top" secondItem="Q1o-Kq-Fur" secondAttribute="top" constant="10" id="uUv-MS-ZmG"/>

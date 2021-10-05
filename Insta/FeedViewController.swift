@@ -10,7 +10,7 @@ import Parse
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-	
+	let myRefreshControl = UIRefreshControl()
 	var posts = [PFObject]()
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		posts.count
@@ -42,21 +42,31 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
 		tableView.delegate = self
 		tableView.dataSource = self
+		myRefreshControl.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
+		tableView.refreshControl = myRefreshControl
 
         // Do any additional setup after loading the view.
     }
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
+		loadPosts()
+		
+	}
+	@objc func loadPosts(){
+		
 		let query = PFQuery(className: "Posts")
 		query.includeKey("author")
 		query.limit = 20
 		query.findObjectsInBackground{(posts, error) in
 			if posts != nil {
-				self.posts = posts!
+				self.posts.removeAll()
+				self.posts = posts!.reversed()
 				self.tableView.reloadData()
 			}
 		}
+		self.myRefreshControl.endRefreshing()
 	}
+}
     
 
     /*
@@ -69,4 +79,4 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
-}
+
