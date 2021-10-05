@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9B1F8504B356A7ACECFBE3DF /* Pods_Insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9F87420D44C1576494F2B1 /* Pods_Insta.framework */; };
 		E2AF5544270BA38900026BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF5543270BA38900026BAB /* AppDelegate.swift */; };
 		E2AF5546270BA38900026BAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF5545270BA38900026BAB /* SceneDelegate.swift */; };
-		E2AF5548270BA38900026BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF5547270BA38900026BAB /* ViewController.swift */; };
 		E2AF554B270BA38900026BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AF5549270BA38900026BAB /* Main.storyboard */; };
 		E2AF554D270BA38D00026BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AF554C270BA38D00026BAB /* Assets.xcassets */; };
 		E2AF5550270BA38D00026BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AF554E270BA38D00026BAB /* LaunchScreen.storyboard */; };
+		E2AF5559270BB9DB00026BAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF5558270BB9DB00026BAB /* LoginViewController.swift */; };
+		E2AF555B270BB9EB00026BAB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF555A270BB9EB00026BAB /* FeedViewController.swift */; };
+		E2B47597270C9675001804A5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B47596270C9675001804A5 /* CameraViewController.swift */; };
+		E2B47599270CBC8F001804A5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B47598270CBC8F001804A5 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +25,15 @@
 		E2AF5540270BA38900026BAB /* Insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF5543270BA38900026BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2AF5545270BA38900026BAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2AF5547270BA38900026BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2AF554A270BA38900026BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2AF554C270BA38D00026BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AF554F270BA38D00026BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2AF5551270BA38D00026BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AF5557270BB91C00026BAB /* Insta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insta.entitlements; sourceTree = "<group>"; };
+		E2AF5558270BB9DB00026BAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E2AF555A270BB9EB00026BAB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E2B47596270C9675001804A5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E2B47598270CBC8F001804A5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		FA9F87420D44C1576494F2B1 /* Pods_Insta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +63,6 @@
 				4610FABF7C1BED786C102F4D /* Pods-Insta.debug.xcconfig */,
 				5B172DF539A31DB3BA616C08 /* Pods-Insta.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,13 +87,17 @@
 		E2AF5542270BA38900026BAB /* Insta */ = {
 			isa = PBXGroup;
 			children = (
+				E2AF5557270BB91C00026BAB /* Insta.entitlements */,
 				E2AF5543270BA38900026BAB /* AppDelegate.swift */,
 				E2AF5545270BA38900026BAB /* SceneDelegate.swift */,
-				E2AF5547270BA38900026BAB /* ViewController.swift */,
 				E2AF5549270BA38900026BAB /* Main.storyboard */,
 				E2AF554C270BA38D00026BAB /* Assets.xcassets */,
 				E2AF554E270BA38D00026BAB /* LaunchScreen.storyboard */,
 				E2AF5551270BA38D00026BAB /* Info.plist */,
+				E2AF5558270BB9DB00026BAB /* LoginViewController.swift */,
+				E2AF555A270BB9EB00026BAB /* FeedViewController.swift */,
+				E2B47596270C9675001804A5 /* CameraViewController.swift */,
+				E2B47598270CBC8F001804A5 /* PostCell.swift */,
 			);
 			path = Insta;
 			sourceTree = "<group>";
@@ -206,9 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF5548270BA38900026BAB /* ViewController.swift in Sources */,
+				E2AF5559270BB9DB00026BAB /* LoginViewController.swift in Sources */,
+				E2B47597270C9675001804A5 /* CameraViewController.swift in Sources */,
 				E2AF5544270BA38900026BAB /* AppDelegate.swift in Sources */,
+				E2AF555B270BB9EB00026BAB /* FeedViewController.swift in Sources */,
 				E2AF5546270BA38900026BAB /* SceneDelegate.swift in Sources */,
+				E2B47599270CBC8F001804A5 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Insta/Insta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZX3ULNP9F;
 				INFOPLIST_FILE = Insta/Info.plist;
@@ -376,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Insta/Insta.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZX3ULNP9F;
 				INFOPLIST_FILE = Insta/Info.plist;
