@@ -32,3 +32,4 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/samo7a/Insta/blob/origin/walkthroug1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/samo7a/Insta/blob/origin/walkthrough-signup.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
