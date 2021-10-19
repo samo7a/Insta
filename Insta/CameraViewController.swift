@@ -12,12 +12,14 @@ import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
+	
 	@IBOutlet weak var stackConstraint: NSLayoutConstraint!
 	private var originalBottomConstraint: CGFloat = 0
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var commentField: UITextField!
 	@IBAction func onLogout(_ sender: Any) {
 		UserDefaults.standard.set(false, forKey: "isLoggedIn")
+		PFUser.logOut()
 		self.dismiss(animated: true, completion: nil)
 	}
 	@IBAction func onCameraButton(_ sender: Any) {
